@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Placement</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            margin: 0;
+            padding: 0;
+            background-image: url('https://th.bing.com/th/id/OIP.Due3W940vpPa_h9BqkOfPQHaEK?w=311&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            font-family: Arial, sans-serif;
+        }
+
+        .order-form {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+
+        input {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 16px;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 8px 12px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        .confirmation {
+            margin-top: 20px;
+            font-weight: bold;
+        }
+
+        .go-back-button {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="order-form">
+        <h2>Order Placement</h2>
+
+        <label for="serviceName">Describe your problem:</label>
+        <input type="text" id="serviceName" name="serviceName" placeholder="Enter service name" required>
+
+        <label for="customerName">Your Name:</label>
+        <input type="text" id="customerName" name="customerName" placeholder="Enter your name" required>
+
+        <label for="customerName">Your Mobile number:</label>
+        <input type="text" id="customerName" name="customerName" placeholder="Enter your mobile number" required>
+
+        <label for="customerName">Your Email address:</label>
+        <input type="text" id="customerName" name="customerName" placeholder="Enter your email" required>
+
+        <label for="paymentMethod">Payment Method:</label>
+        <select id="paymentMethod" name="paymentMethod" required>
+            <option value="cash">Cash after service</option>
+        </select>
+
+        <button onclick="placeOrder()">Place Order</button>
+
+        <div class="confirmation" id="confirmationStatus"></div>
+
+        <div class="go-back-button">
+            <button onclick="window.location.href = 'index.html'">Go Back to Home Page</button>
+        </div>
+    </div>
+
+    <script>
+        function placeOrder() {
+            // You can add logic here to process the order and show a confirmation status.
+            // For simplicity, this example just displays a confirmation message.
+
+            const serviceName = document.getElementById('serviceName').value;
+            const customerName = document.getElementById('customerName').value;
+            const paymentMethod = document.getElementById('paymentMethod').value;
+
+            const confirmationStatus = document.getElementById('confirmationStatus');
+            confirmationStatus.innerHTML = `Order placed successfully! <br>
+                                           Service: ${serviceName} <br>
+                                           Customer: ${customerName} <br>
+                                           Payment Method: ${paymentMethod}`;
+        }
+
+        function goBackToHomePage() {
+            // You can add logic here to navigate back to the home page.
+            alert('Redirecting to the home page');
+            // Replace the alert with your actual navigation code.
+        }
+    </script>
+
+</body>
+</html>

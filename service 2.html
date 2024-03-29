@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nearby shops</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            margin: 0;
+            padding: 0;
+            background-image: url('https://th.bing.com/th/id/OIP.Due3W940vpPa_h9BqkOfPQHaEK?w=311&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            font-family: Arial, sans-serif;
+        }
+
+        .shop-entry {
+            margin-bottom: 20px;
+            text-align: left;
+            display: inline-block;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 8px 12px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-right: 10px;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        .navigation {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="shop-entry">
+        <h2>Service center1</h2>
+        <p>Contact: 123-456-7890</p>
+        <!--<p>Address: 123 Main Street, Cityville</p>-->
+        <!--<button onclick="callShop('123-456-7890')">Call</button>-->
+        <button onclick="window.location.href = 'shop1.html'">View Full Details</button>
+    </div>
+
+    <div class="shop-entry">
+        <h2>Service center2</h2>
+        <p>Contact: 987-654-3210</p>
+        <!--<p>Address: 456 Oak Avenue, Townsville</p>-->
+        <!--<button onclick="callShop('987-654-3210')">Call</button>-->
+        <button onclick="window.location.href = 'shop2.html'">View Full Details</button>
+    </div>
+
+    <div class="shop-entry">
+        <h2>Service center3</h2>
+        <p>Contact: 555-123-4567</p>
+        <!--<p>Address: 789 Pine Road, Villagetown</p>-->
+        <!--<button onclick="callShop('555-123-4567')">Call</button>-->
+        <button onclick="window.location.href = 'shop3.html'">View Full Details</button>
+    </div>
+
+    <div class="shop-entry">
+        <h2>Service center4</h2>
+        <p>Contact: 333-444-5555</p>
+        <!--<p>Address: 321 Elm Street, Hamletville</p>-->
+        <!--<button onclick="callShop('333-444-5555')">Call</button>-->
+        <button onclick="window.location.href = 'shop4.html'">View Full Details</button>
+    </div>
+
+    <div class="shop-entry">
+        <h2>Service center5</h2>
+        <p>Contact: 999-888-7777</p>
+        <!--<p>Address: 567 Birch Lane, Countryside</p>-->
+        <!--<button onclick="callShop('999-888-7777')">Call</button>-->
+        <button onclick="window.location.href = 'shop5.html'">View Full Details</button>
+    </div>
+
+    <div class="navigation">
+        <button type="button" onclick="location.href='http://127.0.0.1:5500/online%20mechanic%20service/service.html'">Previous</button>
+        <!--<button onclick="nextPage()">Next</button>-->
+    </div>
+
+    <script>
+        function callShop(contactNumber) {
+            alert('Calling ' + contactNumber);
+        }
+
+        function viewDetails(shopName) {
+            alert('Viewing full details of ' + shopName);
+        }
+
+        function previousPage() {
+            alert('Go to the previous page');
+        }
+
+        function nextPage() {
+            alert('Go to the next page');
+        }
+    </script>
+
+</body>
+</html>

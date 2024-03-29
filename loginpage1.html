@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <body>
+        <header>
+           <!--<h1>Online Mechanic Service</h1>-->
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="service.html">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="about.html">Guide</a></li>
+                    <li><a href="loginpage1.html">Login</a></li>
+                </ul>
+            </nav>
+            </header>
+    </body>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Mechanic Services</title>
+    <style>
+
+        
+.overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+header h1 {
+    font-size: 36px;
+}
+
+        nav ul {
+            list-style: none;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+        }
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: url('https://imgs.search.brave.com/sECrMpoSe8d58At0qQXTZRRMGeVWQZeVAOc1AXbhS8o/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/ZnJlZS1waG90by9i/aWtlLXJlcGFpci1z/aG9wXzIzLTIxNDgx/Mzg2MjEuanBnP3Np/emU9NjI2JmV4dD1q/cGc');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: #fff;
+        }
+        h1 {
+            font-size: 36px;
+            margin-bottom: 30px;
+            animation: fadeIn 2s ease;
+        }
+        .form {
+            background: rgba(0, 0, 0, 0.6);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        }
+        input[type="text"], input[type="password"], input[type="email"], input[type="tel"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 5px;
+        }
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+        .toggle-form {
+            margin-top: 20px;
+            color: #fff;
+            cursor: pointer;
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+    <script>
+        function showPopup(message) {
+            alert(message);
+            window.location.href = "index.html"; // Redirect to home page
+        }
+
+        function validatePassword() {
+            var password = document.getElementById("password").value;
+            var confirmPassword = document.getElementById("confirmPassword").value;
+
+            if (password !== confirmPassword) {
+                alert("Passwords do not match!");
+                return false;
+            }
+            return true;
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1>Online Mechanic Services</h1>
+        <div id="loginPage">
+            <h2>Login</h2>
+            <form onsubmit="showPopup('Login Successful!'); return false;">
+                <label for="username">Username:</label>
+                <input type="text" id="username" required><br>
+                <label for="password">Password:</label>
+                <input type="password" id="password" required><br>
+                <input type="submit" value="Login">
+            </form>
+        </div>
+        
+        <!-- Signup Page -->
+        <div id="signupPage" style="display: none;">
+            <h2>Signup</h2>
+            <form onsubmit="showPopup('Sign Successful'); return false;">
+                <label for="signupUsername">Username:</label>
+                <input type="text" id="signupUsername" required><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" required><br>
+                <label for="signupPassword">Password:</label>
+                <input type="password" id="signupPassword" required><br>
+                <label for="confirmPassword">Confirm Password:</label>
+                <input type="password" id="confirmPassword" required><br>
+                <input type="submit" value="Signup">
+            </form>
+        </div>
+        
+        <script>
+            function showSignupPage() {
+                document.getElementById("loginPage").style.display = "none";
+                document.getElementById("signupPage").style.display = "block";
+            }
+        
+            function showLoginPage() {
+                document.getElementById("signupPage").style.display = "none";
+                document.getElementById("loginPage").style.display = "block";
+            }
+        </script>
+        
+        <!-- Buttons to switch between login and signup pages -->
+        <button onclick="showLoginPage()">Already have an account? Login</button>
+        <button onclick="showSignupPage()">Don't have an account? Signup</button>
+        
+       
+</body>
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <body>
+        <header>
+            <h1>Online Mechanic Service</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="service.html">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="about.html">Guide</a></li>
+                    <li><a href="loginpage1.html">Login</a></li>
+                </ul>
+            </nav>
+            </header>
+    </body>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Location and Photos</title>
+    <!--<link rel="stylesheet" href="styles.css">-->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-image: url('https://wallpaperaccess.com/full/4890976.jpg')
+        }
+
+        form {
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        .overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+header h1 {
+    font-size: 36px;
+}
+
+        nav ul {
+            list-style: none;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        input {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 16px;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+    <form id="form">
+        <label for="location">Your Location:</label>
+        <input type="text" id="location" name="location" placeholder="Enter your location" required>
+
+        <label for="photo1">Photo 1:</label>
+        <input type="file" id="photo1" name="photo1" accept="image/*" required>
+
+        <label for="photo2">Photo 2:</label>
+        <input type="file" id="photo2" name="photo2" accept="image/*" required>
+
+        <button type="button" onclick="window.location.href = 'service2.html'">Next</button>
+        
+    </form>
+    <!--<div>
+        <button type="button" onclick="location.href='http://127.0.0.1:5500/online%20mechanic%20service/service2.html'">Next</button>
+    </div>-->
+
+    <!--<script>
+        function nextPage() {
+            // You can add JavaScript code here to handle form submission and navigate to the next page.
+            // For simplicity, this example uses window.location to simulate navigation.
+            // In a real application, you might want to submit the form data to a server.
+
+            // Example: Navigate to the next page (replace 'nextPage.html' with your actual next page)
+            window.location.href = 'service2.html';
+        }
+    </script>-->
+
+</body>
+</html>
