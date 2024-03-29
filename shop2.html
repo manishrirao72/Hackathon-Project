@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop Details</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            margin: 0;
+            padding: 0;
+            background-image: url('https://th.bing.com/th/id/OIP.Due3W940vpPa_h9BqkOfPQHaEK?w=311&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            font-family: Arial, sans-serif;
+        }
+
+        .shop-details {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: left;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+
+        p {
+            margin-bottom: 16px;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 8px 12px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="shop-details">
+        <h2>Shop Details</h2>
+
+        <label for="shopName">Shop Name:</label>
+        <p id="shopName">Tej Service center</p>
+
+        <label for="contactNumber">Contact Number:</label>
+        <p id="contactNumber">123-456-7890</p>
+
+        <label for="mechanicName">Mechanic Name:</label>
+        <p id="mechanicName">Tej</p>
+
+        <label for="mechanicContact">Mechanic Contact Number:</label>
+        <p id="mechanicContact">987-654-3210</p>
+
+        <label for="shopAddress">Shop Address:</label>
+        <p id="shopAddress">2nd Main Street, Delhi</p>
+
+        <label for="rating">Rating:</label>
+        <p id="rating">3.5 stars</p>
+
+
+        <button type="button" onclick="window.location.href = 'service2.html'">previous</button>
+        <button onclick="window.location.href = 'payment.html'">Place order</button>
+    </div>
+
+    <!--<script>
+        function editDetails() {
+            // You can add logic here to redirect to an edit page or show a form for editing details.
+            alert('Redirecting to edit page or showing edit form');
+        }
+    </script>-->
+
+</body>
+</html>
